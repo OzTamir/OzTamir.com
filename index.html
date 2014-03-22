@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oz Tamir</title>
+    <meta name="description" content="Oz Tamir - Student during the day, programmer during the night, and sleeping during the weekend.">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,200" rel="stylesheet" type="text/css">
@@ -66,6 +67,8 @@
           <small>
             Built Upon Foundation, Animate.css, move.js and Font Awesome
           </small>
+          <br>
+          <small>The source for this site is available on my <a href="https://github.com/OzTamir/PythonGuy">GitHub</a></small>
         </p>
       </div>
     </div>
@@ -75,11 +78,11 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-      window.onload = function(){
+      $(document).ready(function(){
         $('#avater').addClass('animated fadeInDown');
         $('#social').addClass('animated fadeInUp');
 
-      };
+      });
       // $('#about').click(function(){
       //   nav("about.html")
       //   return false;
