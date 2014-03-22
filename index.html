@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oz Tamir</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,200" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <p></p>
+      <div class="small-10 small-centered columns" id="avater_warp">
+        <p class="text-center">
+          <img src="http://www.gravatar.com/avatar/1dca94bf8c0f443e0f2e3ba46885ded2.png?s=100" class="text-center" style="border-radius: 10px;" id="avater">
+        </p>
+      </div>
+    </div>
+<!--     <div class="row">
+      <div class="small-10 small-centered columns" id="nav">
+        <p class="text-center">
+          <a href="#" id="about">About</a> |
+          <a href="#IDE" id="IDE">Online IDE</a>
+        </p>
+      </div>
+    </div> -->
+    <div class="row">
+      <div id="content">
+        <div class="small-11 small-centered columns" id="title">
+          <p class="text-center">
+            <h2 class="text-center">The name is Oz Tamir.</h1>
+            <h4 class="subheader text-center">
+              Student during the day, programmer during the night, and sleeping during the weekend.
+            </h1>
+          </p>
+        </div>
+        <div class="small-8 small-centered columns" id="about">
+          <p>
+            I'm a student in Tel-Aviv University, in which I learn towards a CS degree. I also learn in Hakfar-Hayarok High school.
+          </p>
+          <p>
+            I'm a programmer, and there's nothing I like more than a challenge waiting to be solved. I mostly write in Python, but I'm well familiar with most concepts in CS as well as OOP and C-Based languages such as C++, C# and Java.
+          </p>
+          <p>
+            I am a part of Hakfar-Hayarok's FIRST robotics team (named GreenBlitz 4590), in which I am part of the Software team; We are in charge for the robot's ability to react to the driver's actions throughout the teleoperated period as well as it's behavior, decision making and Computer-Vision capabilities during the autonomous part of the match.
+          </p>
+        </div>
+        <div class="small-7 small-centered columns">
+          <blockquote>
+            Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="small-8 small-centered columns" id="social">
+        <p class="text-center">
+            <a href="https://github.com/OzTamir" id="github"><i class="fa fa-github fa-3x" id="github_icon"></i></a>
+            <a href="https://twitter.com/Pyth0nGuy" id="twitter"><i class="fa fa-twitter fa-3x" id="twitter_icon"></i></a>
+        </p>
+        <p class="text-center" id="thankyou">
+          <small>
+            Built Upon Foundation, Animate.css, move.js and Font Awesome
+          </small>
+        </p>
+      </div>
+    </div>
+
+    <script src='js/move.min.js'></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      window.onload = function(){
+        $('#avater').addClass('animated fadeInDown');
+        $('#social').addClass('animated fadeInUp');
+
+      };
+      // $('#about').click(function(){
+      //   nav("about.html")
+      //   return false;
+      // });
+      $('#github').click(function(){
+          $('#avater').addClass('animated fadeOut').end();
+          $('#content').addClass('animated fadeOut').end();
+          $('#thankyou').addClass('animated fadeOut').end();
+          $('#twitter_icon').addClass('animated fadeOut').end();
+          move('#github_icon')
+          .scale(100)
+          .duration('4s')
+          .end();
+        });
+      $('#twitter').click(function(){
+          $('#avater').addClass('animated fadeOut').end();
+          $('#text').addClass('animated fadeOut').end();
+          $('#thankyou').addClass('animated fadeOut').end();
+          $('#github_icon').addClass('animated fadeOut').end();
+          move('#twitter_icon')
+          .scale(100)
+          .duration('4s')
+          .end();
+        });
+      var nav = function(dest){
+        $('#social').removeClass().addClass('animated fadeOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();
+          });
+        $('#content').removeClass().addClass('animated slideOutLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass();
+          $("#content").load(dest);
+          $('#content').removeClass().addClass('animated slideInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();
+          });
+          $('#social').addClass('animated fadeInUp');
+        });
+      };
+    </script>
+  </body>
+</html>
