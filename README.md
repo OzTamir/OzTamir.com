@@ -1,7 +1,7 @@
 OzTamir.com
 =========
 
-The repo for my personal website, [OzTamir.com] (http://ozamir.com)
+The repo for my personal website, [OzTamir.com] (http://oztamir.com)
 
 Simple, sleek, responsive - just the way I like it.
 
