@@ -1,7 +1,7 @@
-PythonGuy
+OzTamir.com
 =========
 
-The repo for my personal website, PythonGuy.com
+The repo for my personal website, [OzTamir.com] (http://ozamir.com)
 
 Simple, sleek, responsive - just the way I like it.
 
