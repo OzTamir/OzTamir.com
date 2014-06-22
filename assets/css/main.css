@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #about {
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 body {
@@ -120,25 +120,4 @@ a:after {
 #footer h4 {
 	color: white;
 	text-transform: uppercase;
-}
-
-.sans,input,textarea,h4 {
-	font-family:europa-n4,europa,sans-serif;
-	font-style:normal;
-	font-weight:400;
-	text-transform:uppercase;
-	letter-spacing:2px;
-}
-
-ul.bottom-nav {
-	list-style:none;
-	text-align:center;
-}
-
-ul.bottom-nav li {
-	display:inline;
-}
-
-ul.bottom-nav li + li {
-	margin-left:20px;
 }
