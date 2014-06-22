@@ -79,25 +79,23 @@
 				</div><!-- /row -->
 		    </div> <!-- /container -->
 		</div>
-
-		<!-- +++++ Footer Section +++++ -->
-		<div class="row-fluid">
-			<footer id="footer">
-				<div class="container text-center">
-					<div class="row">
-						<div class="col-lg-12 bottom-nav">
-							<p></p>
-							<p>
-					            <a href="https://github.com/OzTamir" id="github"><i class="fa fa-github fa-3x" id="github_icon"></i></a>
-					            <a href="https://twitter.com/OzTamir" id="twitter"><i class="fa fa-twitter fa-3x" id="twitter_icon"></i></a>
-					        </p>
-						</div><!-- /col-lg-4 -->
-					</div>
-				</div>
-			</footer>
-		</div>
-
 	</div>
+		<!-- +++++ Footer Section +++++ -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p></p>
+					<p>
+			            <a href="https://github.com/OzTamir" id="github"><i class="fa fa-github fa-3x" id="github_icon"></i></a>
+			            <a href="https://twitter.com/OzTamir" id="twitter"><i class="fa fa-twitter fa-3x" id="twitter_icon"></i></a>
+			        </p>
+				</div><!-- /col-lg-4 -->
+			</div>
+		</div>
+	</div>
+
+	
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -107,6 +105,7 @@
     <script type="text/javascript">
 		$('#github').click(function(){
 		  $('#content').addClass('animated fadeOut').end();
+		  $('#footer').addClass('animated fadeOut').end();
 		  $('#twitter_icon').addClass('animated fadeOut').end();
 		  move('#github_icon')
 		  .scale(100)
@@ -115,6 +114,7 @@
 		});
 		$('#twitter').click(function(){
 		  $('#content').addClass('animated fadeOut').end();
+		  $('#footer').addClass('animated fadeOut').end();
 		  $('#github_icon').addClass('animated fadeOut').end();
 		  move('#twitter_icon')
 		  .scale(100)
