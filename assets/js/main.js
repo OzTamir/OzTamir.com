@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 !(function($) {
+  console.log("Hey there! Sorry, no easter eggs here ¯\_(ツ)_/¯");
+
   "use strict";
 
   // Preloader
