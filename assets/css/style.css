@@ -1,232 +1,250 @@
-/**
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+	background: #fff;
+	color: rgba(255, 255, 255, .4);
+	background: #222;
+	line-height: 1.7;
+	font-size: 16px;
+	font-weight: 300
+}
+
+::-moz-selection {
+	background: #000;
+	color: #fff
+}
+
+::selection {
+	background: #000;
+	color: #fff
+}
+
+::-moz-selection {
+	background: #000;
+	color: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #fff;
+	font-weight: 200
+}
+
+h2 {
+	font-size: 25px
 }
 
 a {
-  color: #0563bb;
+	-webkit-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+	color: #bac964
+}
+
+a:active,
+a:focus,
+a:hover {
+	color: #b2c251;
+	text-decoration: none
+}
+
+.site-navbar .navbar-nav>li>a {
+	padding: 15px 20px!important
+}
+
+.site-navbar {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	margin-bottom: 0;
+	background: 0 0;
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	z-index: 200;
+	background: #fff
+}
+
+.site-navbar.bg-light {
+	background: 0 0!important
+}
+
+#navbar {
+  display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.site-navbar .navbar-nav>li>a {
+	color: #fff!important;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .1em;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: .2em
+}
+
+a {
+	color: #fff
 }
 
 a:hover {
-  color: #067ded;
-  text-decoration: none;
+	color: #067ded;
+	text-decoration: none
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+.social-links {
+	font-size: 25px
 }
 
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #0563bb;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  padding-top:0px;
-  width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.png") top right no-repeat;
-  background-position: center;
+.site-hero {
+	background-color: #ccc;
   background-size: cover;
-  position: relative;
+  background-image: url(/assets/images/hero-bg.png);
+	background-position: 40% 20%;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden
 }
 
-@media (max-width: 700px) {
-  #hero {
-    background: url("../img/hero-bg.png") top left no-repeat;
-    background-position: top left;
-    background-size: 240%;
-  }
+.site-hero,
+.site-hero .row {
+	height: 100vh;
+	min-height: 800px
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 50px;
-  }
+.site-hero:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5)
 }
 
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.site-hero h1 {
+	font-weight: 200;
+	margin-bottom: 5px;
+	display: block
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #45505b;
+.site-hero h1 strong {
+	font-weight: 800
 }
 
-#hero p {
-  color: #45505b;
-  margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+@media (min-width:768px) {
+	.site-hero h1 {
+		font-size: 70px
+	}
 }
 
-#hero p span {
-  color: #0563bb;
-  letter-spacing: 1px;
+@media (max-width:768px) {
+	.site-hero {
+		background-position: 60%;
+	}
 }
 
-#hero .social-links {
-  margin-top: 30px;
+.site-hero h1 {
+	font-weight: 200;
+	color: #fff
 }
 
-#hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: #45505b;
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
+.site-section {
+	padding: 5em 0
 }
 
-#hero .social-links .linkedin {
-  margin-right: 0px;
+.section-heading {
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 10
 }
 
-#hero .social-links a:hover {
-  color: #0563bb;
+.section-heading h2 {
+	position: relative;
+	font-weight: 200;
+	padding-top: 20px;
+	font-size: 30px
 }
 
-@media (max-width: 992px) {
-  #hero {
-    text-align: center;
-  }
-  #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-  #hero p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
-  }
+.section-heading h2 strong {
+	font-weight: 800
 }
 
-#hero .profle-picture {
+.section-heading.text-center h2:before {
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
+.site-link {
+	position: relative
+}
+
+.site-link i {
+	position: relative;
+	top: 2px;
+	-webkit-transition: .3s all ease;
+	-o-transition: .3s all ease;
+	transition: .3s all ease
+}
+
+.site-link:hover i {
+	position: relative;
+	margin-left: 20px
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
+	transition: .5s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+
+.text {
+	color: #fff;
+	font-size: 25px;
+	padding: 16px 32px
+}
+
+.block-47 .block-47-image {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50px;
+	flex: 0 0 50px;
+	display: block
+}
+
+.letter-spacing {
+	letter-spacing: .2rem;
+	color: rgba(255, 255, 255, .5)!important
+}
+
+.profle-picture {
   height: 250px;
   width: 250px;
   padding: 40px;
-}
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #45505b;
-}
-
-.section-title h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #0563bb;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
 }
